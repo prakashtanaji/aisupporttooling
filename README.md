@@ -42,6 +42,21 @@ Run the unit test module from the repository root:
 python -m unittest codexAgents.units.test_originalFunc
 ```
 
+## Pre-commit hook
+
+This repository includes a Git pre-commit hook at `.githooks/pre-commit`.
+It runs the unit test command below and aborts the commit if the tests fail:
+
+```powershell
+python -m unittest codexAgents.units.test_originalFunc
+```
+
+Enable repo-managed hooks in your local clone with:
+
+```powershell
+git config core.hooksPath .githooks
+```
+
 ## How to import the function
 
 You can import the reusable function with:

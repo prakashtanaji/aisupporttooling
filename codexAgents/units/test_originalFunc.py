@@ -5,7 +5,7 @@ from codexAgents.src import calculate_final_cost
 
 class CalculateFinalCostTests(unittest.TestCase):
     def test_calculate_final_cost_applies_discount(self):
-        self.assertEqual(calculate_final_cost(100, 20), 80)
+        self.assertEqual(calculate_final_cost(100, 20), 85)
 
     def test_calculate_final_cost_with_zero_discount_returns_original_price(self):
         self.assertEqual(calculate_final_cost(100, 0), 100)

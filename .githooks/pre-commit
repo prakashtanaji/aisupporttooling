@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Running unit tests before commit..."
+python -m unittest codexAgents.units.test_originalFunc
+status=$?
+
+if [ $status -ne 0 ]; then
+  echo "Commit aborted because unit tests failed."
+  exit $status
+fi
+
+exit 0
