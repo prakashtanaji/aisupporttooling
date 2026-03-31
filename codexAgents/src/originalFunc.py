@@ -2,7 +2,7 @@
 """Basic pricing helpers for discounted cost calculations."""
 
 
-def calculateFinalCost(price, discount=0) :
+def calculate_final_cost(price, discount=0) :
     """Return the final cost after applying a percentage discount.
 
     Args:
@@ -33,4 +33,4 @@ def calculateFinalCost(price, discount=0) :
 
 
 if __name__ == "__main__":
-    print ("Cost for discount " + str(calculateFinalCost(100, 20)))
+    print ("Cost for discount " + str(calculate_final_cost(100, 20)))
